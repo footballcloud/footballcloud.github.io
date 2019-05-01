@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+  - v10.15.1
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - release
+
+before_script:
+- npm install -g @angular/cli
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install -g yarn
+
+script:
+  - yarn add @angular-devkit/build-angular --dev
+  - yarn build --prod --base-href
+  - ls ./dist
+
+deploy:
+  provider: pages
+  target-branch: master
+  local-dir: ./dist/home
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  
