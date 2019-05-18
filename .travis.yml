@@ -3,12 +3,9 @@ cache: bundler
 branches:
   only:
   - release
-script:
-  - JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
   provider: pages
   local-dir: ./site
-
 deploy:
   provider: pages
   target-branch: master
