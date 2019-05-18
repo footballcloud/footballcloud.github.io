@@ -1,32 +1,18 @@
-language: node_js
-node_js:
-  - v10.15.1
-dist: trusty
-sudo: false
-
+language: ruby
+cache: bundler
 branches:
   only:
   - release
-
-before_script:
-- npm install -g @angular/cli
-
-cache:
-  directories:
-    - node_modules
-
-install:
-  - npm install -g yarn
-
 script:
-  - yarn add @angular-devkit/build-angular --dev
-  - yarn build --prod --base-href
-  - ls ./dist
+  - JEKYLL_ENV=production bundle exec jekyll build --destination site
+deploy:
+  provider: pages
+  local-dir: ./site
 
 deploy:
   provider: pages
   target-branch: master
-  local-dir: ./dist/home
+  local-dir: ./site
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
