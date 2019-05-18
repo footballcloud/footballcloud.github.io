@@ -1,0 +1,27 @@
+#- links:
+#  - name: Teams
+#    link: /pricing/
+#  - name: Equipo
+#    link: /blog/
+#  - name: About
+#    link: /about/
+#  - name: Contact
+#    link: /contact/
+- links:
+  - name: Twitter
+    link: https://twitter.com/fbcloudnet
+    social_icon: Twitter
+    new_window: true
+  - name: Instagram
+    link: https://www.instagram.com/fbcloudnet/
+    social_icon: Instagram
+    new_window: true
+    
+#  - name: YouTube
+#    link: https://youtube.com
+#    social_icon: YouTube
+#    new_window: true
+#  - name: RSS
+#    link: /feed.xml
+#    social_icon: RSS
+#    new_window: false
