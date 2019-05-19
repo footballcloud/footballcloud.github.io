@@ -1,9 +1,9 @@
 ---
-date: 2019-05-12
+date: 2010-02-25
 title: Pedro García
 categories:
-  - informático
-web: https://peris.dev
+  - junior
+web: https://footballcloud.net/pedrogarcia/
 ---
 
-# Todo lo que una persona puede imaginar, otros pueden hacerlo realidad.
+# La creatividad no es talento sino actitud.
