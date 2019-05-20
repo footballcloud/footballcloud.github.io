@@ -6,6 +6,10 @@
   link: /blog/
   new_window: false
   highlight: false
+- name: Entrenadores
+  link: /coach/
+  new_window: false
+  highlight: false
 #- name: Preparadores
 #  link: /preparadores/
 #  new_window: false
